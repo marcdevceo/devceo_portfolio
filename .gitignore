@@ -1,0 +1,23 @@
+*.pyc
+__pycache__/
+*.pyo
+
+venv/
+env/
+
+db.sqlite3
+
+*/migrations/
+
+.env
+
+*.log
+
+media/
+static/
+
+.idea/
+.vscode/
+
+.DS_Store  # macOS
+

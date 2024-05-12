@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}My Projects{% endblock %}
+
+{% block content %}
+<div class="bg-slate-900">
+    <h1 class="text-3xl text-center font-bold p-2">My Projects 🧑🏽‍💻</h1>
+    <div class="m-10">
+        <p>
+            Welcome to the projects page of my portfolio site! Here, you'll find a collection of 
+            innovative projects developed using Python and Django.            
+        </p>
+        <br>
+        <p>
+            Managed Enterprises, LLC showcases practical and business-oriented applications that 
+            streamline enterprise operations.
+        </p>
+        <br>
+        <p>
+            Sideline-Connect, a sports social network, bridges the gap between athletes and fans, 
+            helping you connect with like-minded sports enthusiasts and stay updated on the latest 
+            happenings.
+        </p>
+        <br>
+        <p>
+            MoviFind, a movie search app, helps you explore and find new cinematic favorites by 
+            leveraging powerful APIs.
+        </p>
+        <br>
+        <p>
+            Each project is built with seamless API integration, offering dynamic and interactive 
+            features. Click on any project image to visit the live site, or explore the GitHub 
+            as to gain insights into the code. Discover how Django enables these versatile and 
+            engaging applications!
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class='flex flex-wrap justify-center'>
+        <div class='m-10'>
+            <a href="https://managedenterprises.net/">
+                <img src="../static/mellc-website.png" alt="Managed Enterprises Website">
+            </a>
+            <div class="flex flex-col">
+                <h4 class='flex justify-center'>Managed Enterprises, LLC Website</h4>
+                <a class='flex justify-center m-3' href="https://github.com/marcdevceo/mellc">
+                    <button class="bg-blue-700 border border-white px-4 py-2 rounded-lg text-white hover:bg-blue-300 hover:border-blue-400 hover:text-gray-900">
+                        Github Link
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class='m-10'>
+            <a href="https://sideline-connect-3e37933ea594.herokuapp.com/">
+                <img src="../static/sideline-connect.png" alt="Sidelin-Connect Website">
+            </a>
+            <div class="flex flex-col">
+                <h4 class='flex justify-center'>Sideline Connect Web App</h4>
+                <a class='flex justify-center m-3' href="https://github.com/marcdevceo/sidelineconnect">
+                    <button class="bg-blue-700 border border-white px-4 py-2 rounded-lg text-white hover:bg-blue-300 hover:border-blue-400 hover:text-gray-900">
+                        Github Link
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class='m-10'>
+            <a href="https://movifind.vercel.app/">
+                <img src="../static/movifind.png" alt="MoviFind Website">
+            </a>
+            <div class="flex flex-col">
+                <h4 class='flex justify-center'>MoviFind Web App</h4>
+                <a class='flex justify-center m-3' href="https://github.com/marcdevceo/movifind">
+                    <button class="bg-blue-700 border border-white px-4 py-2 rounded-lg text-white hover:bg-blue-300 hover:border-blue-400 hover:text-gray-900">
+                        Github Link
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    {% tailwind_css %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="bg-slate-600">
+    <header class="">
+        <nav class="">
+            <ul class="flex justify-center sm:justify-end p-1 list-none">
+                <li class="p-3">
+                    <a href="{% url 'projects' %}">Projects</a>
+                </li>
+                <li class="p-3">
+                    <a href={% url 'resume' %}>Resume</a>
+                </li>
+                <li class="p-3">Blog</li>
+                <li class="p-3"
+                    ><a href="{% url 'home' %}">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}        
+    </main>
+    <footer class="text-center p-10">
+        <p>&copy; 2024 Created by MarcDevCEO</p>
+    </footer>
+</body>
+</html>
