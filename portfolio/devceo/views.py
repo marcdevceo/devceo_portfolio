@@ -9,3 +9,6 @@ def projects(request):
 
 def resume(request):
     return render(request, 'resume.html')
+
+def blog(request):
+    return render(request, 'blog.html')
